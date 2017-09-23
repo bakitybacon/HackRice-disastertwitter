@@ -1,4 +1,6 @@
 import twitter
+import csv
+import re
 
 class TwitterScraper(twitter.Api):
     """
@@ -9,4 +11,22 @@ class TwitterScraper(twitter.Api):
                          consumer_secret=consumer_secret,
                          access_token_key=access_token_key,
                          access_token_secret=access_token_secret)
-		
+
+    def search_keywords(self,keywords,geocode):
+        """
+        Takes a list of key word strings and searches each of them on twitter.
+        """
+
+        for keyword in keywords:
+            results = self.GetSearch(term=keyword,geocode=geocode,count=25)
+            with open("./data.csv", "a") as data:
+                writer = csv.writer(data)
+                writer.writerow(self.parse_status(results,keywords))
+
+
+    def parse_status(self,status,keywords):
+        """
+        Takes a twitter.Status and parse's it for location and severity. Returns a tuple with latitude, longitude, and
+        severity.
+        """
+        pass
