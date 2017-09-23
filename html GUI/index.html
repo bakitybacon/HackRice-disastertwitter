@@ -33,6 +33,7 @@
 							<ul>
 								<li><a href="#about">About</a></li>
 								<li><a href="#search">Search</a></li>
+								<!--<li><a href="#contact">Contact</a></li>-->
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -41,21 +42,31 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Intro -->
+						<!-- About --> 
 							<article id="about">
-								<h2 class="major"><font color="yellow">About<font color="white"></h2>
+								<h2 class="major"><font color="yellow">About</font></h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<p>This program uses keyword search and geotags from Tweets sent in searched area to find the locations most in need of Emergency Assistance</p>
 								<p>To Use Canary, go to the search tool and enter the city nearest the affected area (eg, Houston), as well as the radius from the city center that you are concerned with. Then, Use the Keywords pane to determine what kind of words are alarming and how severe they are. Finally, hit the Search button and see where people need the most help.</p>
-								<footer>Developed by <a href="https://github.com/potatopeno"><font color="yellow">potatopeno<font color="white"></a>, <a href="https://github.com/bakitybacon"><font color="yellow">bakitybacon<font color="white"></a>, <a href="https://github.com/darthkronos"><font color="yellow">darthkronos<font color="white"></a>, and <a href="https://github.com/GraceTan"><font color="yellow">GraceTan<font color="white"></a> for HackRice7 2017</footer>
 							</article>
+							<footer>
+								Developed by <a href="https://github.com/potatopeno"><font color="yellow">potatopeno</font></a>, <a href="https://github.com/bakitybacon"><font color="yellow">bakitybacon</font></a>, <a href="https://github.com/darthkronos"><font color="yellow">darthkronos</font></a>, and <a href="https://github.com/GraceTan"><font color="yellow">GraceTan</font></a> for HackRice7 2017</footer>
 
-						<!-- Work -->
+						<!-- Search -->
 							<article id="search">
-								<h2 class="major">Canary</h2>
+								<h2 class="major"><font color="yellow">Search<font color="white"></h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<form action="/userinput.txt">
+									<h3>City:</h3>
+									<input type="text" name="city">
+									<br>
+									<h3>Radius:</h3>
+									<input type="text" name="city">
+									<br><br>
+									<div style="text-align:center">
+										<button type="button" name="searchButton"><font color="yellow" align="center">SEARCH</font></button>
+									</div>
+								</form>
 							</article>
 
 						<!-- Old About -->
