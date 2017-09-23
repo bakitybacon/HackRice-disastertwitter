@@ -1,2 +1,1 @@
-HackRice ftw
-*This has been edited*
+A progam that allows the user to use Twitter to locate areas in need of emergency help during natural and other disasters
