@@ -1,0 +1,5 @@
+// Comment with //
+// object:value <- no spaces
+
+// You need to get your consumer key, secret key, access code and secret access code to make the bot work.
+consumer_key:[CONSUMER_KEY]
