@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//package disastertwitter;
 import java.util.*;
 import java.io.*;
 
@@ -14,11 +13,21 @@ import java.io.*;
 public class Disastertwitter 
 {
     private final HashMap<String, Integer> keywords;
+    
     public Disastertwitter()
     {
         keywords = parseKeywords();
         System.out.println(keywords);
+        
+        
+        
     }
+    
+    private void generateCSV()
+    {
+        //this is the backend's task
+    }
+    
     /**
      * @param args the command line arguments
      */
