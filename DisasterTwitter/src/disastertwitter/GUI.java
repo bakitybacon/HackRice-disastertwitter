@@ -27,47 +27,55 @@ public class GUI extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        geolocationText = new javax.swing.JTextField();
+        radiusText = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
+        searchButton = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setLayout(null);
+        setMinimumSize(new java.awt.Dimension(1920, 1200));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField1.setText("geolocationText");
-        add(jTextField1);
-        jTextField1.setBounds(340, 110, 181, 29);
+        geolocationText.setNextFocusableComponent(radiusText);
+        geolocationText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                geolocationTextActionPerformed(evt);
+            }
+        });
+        add(geolocationText, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, 440, 80));
 
-        jTextField2.setText("radiusText");
-        add(jTextField2);
-        jTextField2.setBounds(340, 180, 181, 29);
+        radiusText.setNextFocusableComponent(jScrollPane1);
+        radiusText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                radiusTextActionPerformed(evt);
+            }
+        });
+        add(radiusText, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 230, 440, 70));
 
-        jLabel1.setText("geolocation Label");
-        add(jLabel1);
-        jLabel1.setBounds(127, 111, 145, 23);
-
-        jLabel2.setText("radiusLabel");
-        add(jLabel2);
-        jLabel2.setBounds(127, 159, 95, 23);
-        add(jScrollPane1);
-        jScrollPane1.setBounds(877, 108, 932, 539);
+        jScrollPane1.setBackground(new java.awt.Color(51, 255, 255));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 230, 1600, 680));
+        add(searchButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 640, 670, 260));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/disastertwitter/Background.png"))); // NOI18N
-        add(jLabel3);
-        jLabel3.setBounds(0, 0, 1810, 1200);
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void radiusTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radiusTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_radiusTextActionPerformed
+
+    private void geolocationTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_geolocationTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_geolocationTextActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTextField geolocationText;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField radiusText;
+    private javax.swing.JLabel searchButton;
     // End of variables declaration//GEN-END:variables
 }
