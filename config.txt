@@ -2,4 +2,17 @@
 // object:value <- no spaces
 
 // You need to get your consumer key, secret key, access code and secret access code to make the bot work.
-consumer_key:[CONSUMER_KEY]
+consumer_key=[CONSUMER_KEY]
+consumer_secret_key=[CONSUMER_SECRET_KEY]
+access_code=[ACCESS_CODE]
+access_code_secret=[ACCESS_CODE_SECRET]
+
+// Geocode and radius for searching
+geocode=[GEOCODE]
+radius=[RADIUS]
+
+// Keywords -> write them in the form keyword/phrase:weight where keyword/phrase can have whitespace and weight is an
+// integer indicating severity.
+#KEYWORDS
+tree down=10
+sunshine=-10
