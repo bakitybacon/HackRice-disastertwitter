@@ -1,0 +1,50 @@
+#Flood Keywords:
+rising water,5
+flood,7
+drowning,9
+house flooding,8
+washed away,7
+
+#Earthquake Keywords,
+earth shaking,7
+earthquake,7
+ground moving,4
+chasm,8
+fissure,9
+
+#Tornado Keywords:
+funnel cloud,8
+tornado,8
+trees knocked over,7
+
+#Explosion Keywords:
+boom,6
+explosion,6
+loud noise,3
+smoke,5
+
+#Hurricane Keywords:
+storm surge,8
+
+
+#Terrorist Attack Keywords:
+terrorism,7
+bombing,8
+
+#Wildfire/Forest fire Keywords:
+
+#Volcano Keywords:
+
+#Nuclear Fallout:
+
+#Zombie Apocalypse:
+The Walking Dead,10
+
+#General Keywords:
+disaster,8
+help me,7
+dying,10
+
+
+
+
