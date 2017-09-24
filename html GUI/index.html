@@ -53,16 +53,16 @@
 							<article id="search">
 								<h2 class="major"><font color="yellow">Search</font></h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<form action="/userinput.txt">
-									<h3>City:</h3>
-									<input type="text" name="city">
+								<form action="assets/userinput.txt" method="post">
+									<h3 id="cityLabel">City:</h3>
+									<input type="text" id="city">
 									<br>
 									<h3>Radius:</h3>
-									<input type="text" name="city">
+									<input type="text" id="radius">
 									<br>
 									<h3>Keywords:</h3>
-									<div class="table-wrapper" style="height:400px;" id="keywords">
-										<table>
+									<div class="table-wrapper" style="height:400px;">
+										<table id="keywords">
 											<thead>
 												<tr>
 													<th>Keywords</th>
@@ -78,44 +78,37 @@
 													<td>Happy</td>
 													<td>0</td>
 												</tr>
-<tr>
-													<td>Happy</td>
-													<td>0</td>
-												</tr>
-<tr>
-													<td>Happy</td>
-													<td>0</td>
-												</tr>
-
-<tr>
-													<td>Happy</td>
-													<td>0</td>
-												</tr>
-<tr>
-													<td>Happy</td>
-													<td>0</td>
-												</tr>
-<tr>
-													<td>Happy</td>
-													<td>0</td>
-												</tr>
-<tr>
-													<td>Happy</td>
-													<td>0</td>
-												</tr>
-<tr>
-													<td>Happy</td>
-													<td>0</td>
-												</tr>
 											</tbody>
 										</table>
 									</div>
-									<button type="button" name="addButton">Add a Keyword</button>
-									<button name="clusterButton">Add by Cluster</button>
+									<h2>Add a Keyword:</h2>
+									<input type="text" id="keywordAdd" value="Keyword" onclick="clearBox()">
+									<input type="text" id="severityAdd" value="Severity (0-10)">
+									<br>
+									<button type="button" id="addButton" onClick="addPressed()">Add as Keyword</button>
+									<button type="button" id="deleteButton" onClick="removeRow()">Delete Last Row</button>
 									<br><br>
 									<div style="text-align:center">
-										<button type="button" name="searchButton"><font color="yellow" align="center">SEARCH</font></button>
+										<button id="searchButton"><font color="yellow" align="center">SEARCH</font></button>
 									</div>
+									<script>
+										function removeRow(){
+											//if(document.getElementById("keywords").rows[-1].cols[0].value != "Happy")
+												document.getElementById("keywords").deleteRow(-1)
+										}
+										function clearBox(){
+											document.getElementById("keywordAdd").value=""
+											document.getElementById("severityAdd").value=""
+										}
+										function addPressed(){
+											var newRow=document.getElementById("keywords").insertRow(-1)
+											if(document.getElementById("keywordAdd").value != ""){
+												newRow.insertCell(0).appendChild(document.createTextNode(document.getElementById("keywordAdd").value))
+												newRow.insertCell(1).appendChild(document.createTextNode(document.getElementById("severityAdd").value))
+											}
+											clearBox()
+										}
+									</script>
 								</form>
 							</article>
 
