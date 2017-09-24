@@ -25,7 +25,7 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1><font color="yellow">Canary<font color="white"</h1>
+								<h1><font color="yellow">Canary</font></h1>
 								<p>A HackRice program to find areas in the most danger during Disasters</p>
 							</div>
 						</div>
@@ -51,7 +51,7 @@
 							</article>
 						<!-- Search -->
 							<article id="search">
-								<h2 class="major"><font color="yellow">Search<font color="white"></h2>
+								<h2 class="major"><font color="yellow">Search</font></h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<form action="/userinput.txt">
 									<h3>City:</h3>
@@ -59,6 +59,59 @@
 									<br>
 									<h3>Radius:</h3>
 									<input type="text" name="city">
+									<br>
+									<h3>Keywords:</h3>
+									<div class="table-wrapper" style="height:400px;" id="keywords">
+										<table>
+											<thead>
+												<tr>
+													<th>Keywords</th>
+													<th>Severity (0-10, 10 being worst)</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Death</td>
+													<td>10</td>
+												</tr>
+												<tr>
+													<td>Happy</td>
+													<td>0</td>
+												</tr>
+<tr>
+													<td>Happy</td>
+													<td>0</td>
+												</tr>
+<tr>
+													<td>Happy</td>
+													<td>0</td>
+												</tr>
+
+<tr>
+													<td>Happy</td>
+													<td>0</td>
+												</tr>
+<tr>
+													<td>Happy</td>
+													<td>0</td>
+												</tr>
+<tr>
+													<td>Happy</td>
+													<td>0</td>
+												</tr>
+<tr>
+													<td>Happy</td>
+													<td>0</td>
+												</tr>
+<tr>
+													<td>Happy</td>
+													<td>0</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<button type="button" name="addButton">Add a Keyword</button>
+									<button name="clusterButton">Add by Cluster</button>
 									<br><br>
 									<div style="text-align:center">
 										<button type="button" name="searchButton"><font color="yellow" align="center">SEARCH</font></button>
@@ -123,13 +176,13 @@
 									<h4>Preformatted</h4>
 									<pre><code>i = 0;
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+										while (!deck.isInOrder()) {
+										    print 'Iteration ' + i;
+										    deck.shuffle();
+										    i++;
+										}
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+										print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								</section>
 
 								<section>
